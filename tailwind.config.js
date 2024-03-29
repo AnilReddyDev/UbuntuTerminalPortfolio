@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        ubuntuWallpaper: "url('./src/assets/img/ubuntu-wallpaper.jpg')",
+        ubuntuWallpaper: "url('/src/assets/img/ubuntu-wallpaper.jpg')",
       },
       colors: {
         "t-bgc": "#320e24",
