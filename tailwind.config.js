@@ -13,6 +13,15 @@ export default {
         "t-blue":"#164384",
         "t-head-btn":"#373737"
       },
+      keyframes: {
+        skillProgressBar:{
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        }
+      },
+      animation:{
+        skillProgressBar:"skillProgressBar 2s ease-in-out forwards"
+      }
     },
   },
   plugins: [],

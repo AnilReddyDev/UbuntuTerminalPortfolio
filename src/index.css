@@ -11,3 +11,11 @@
     "BLED" 0,
     "SCAN" 0;
 }
+
+.progress {
+  background-color: #5cb85c; /* Progress bar color */
+  height: 30px;
+  width: 0; /* Start at 0% width */
+  max-width: 250px;
+  transition: width 1s ease-in-out; /* Add a smooth transition */
+}

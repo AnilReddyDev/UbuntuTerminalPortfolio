@@ -1,20 +1,7 @@
 import React, { useState } from "react";
 
-export default function Input() {
-  const [queryData, setQueryData] = useState("");
-
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      handleSubmit();
-    }
-  };
-
-  // A function that handles form submission.
-  const handleSubmit = () => {
-    console.log("Entered value:", queryData);
-    
-    setQueryData("");
-  };
+export default function Input({queryData,setQueryData,handleKeyDown}) {
+  
 
   return (
     <label htmlFor="query" className="text-xl flex text-green-400 font-medium">
