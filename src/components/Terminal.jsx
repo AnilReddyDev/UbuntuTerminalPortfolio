@@ -201,7 +201,7 @@ export default function Terminal({ showTerminal, setShowTerminal }) {
           </div>
         </div>
         <div
-          className={`terminalBodyw-full bg-t-bgc  ${
+          className={`terminalBody overflow-x-hidden w-full bg-t-bgc  ${
             terminalSize ? "h-90per" : "h-[480px]"
           } overflow-scroll pl-2 py-2`}
         >
