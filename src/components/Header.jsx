@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({ showTerminal, setShowTerminal}) {
   const [realTime, setrealTime] = React.useState();
   const months = [
     "January",
@@ -31,10 +31,10 @@ export default function Header() {
   return (
     <div className="w-full h-12 absolute top-0 left-0 flex  px-5 items-center justify-between  text-white bg-gray-950 ">
       <div className="flex gap-4">
-        <p className=" text-xl px-4 py-1 rounded-full  hover:bg-gray-800 ">
+        <p className="cursor-progress text-xl px-4 py-1 rounded-full  hover:bg-gray-800 ">
           Activities
         </p>
-        <p className=" text-xl px-4 flex items-center gap-1 py-1 rounded-full hover:bg-gray-800 ">
+        <p onClick={() => setShowTerminal(!showTerminal)} className=" cursor-pointer text-xl px-4 flex items-center gap-1 py-1 rounded-full hover:bg-gray-800 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -52,10 +52,10 @@ export default function Header() {
           Terminal
         </p>
       </div>
-      <p className="text-xl px-4 py-1 rounded-full hover:bg-gray-800">
+      <p className=" cursor-progress text-xl px-4 py-1 rounded-full hover:bg-gray-800">
         {monthName} {dayNumber} {realTime}
       </p>
-      <p className="flex gap-4 ml-14 text-xl px-4 py-1 rounded-full hover:bg-gray-800">
+      <p className=" cursor-context-menu flex gap-4 ml-14 text-xl px-4 py-1 rounded-full hover:bg-gray-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -148,7 +148,7 @@ export default function Output({ line }) {
         <div className="text-xl text-white flex flex-col  break-words font-mono">
           {line.skillsList.map((item, index) => (
             <div key={index} className="flex gap-2 items-center">
-              {item} <p className="text-orange-500 animate-skillProgressBar bg-yellow-400 max-w-20 h-5  rounded-lg border-2"></p>
+              {item} <p className="text-orange-500 animate-skillProgressBar bg-yellow-400 max-w-20 h-4  rounded-lg border-2"></p>
             </div>
           ))}
         </div>

@@ -21,6 +21,10 @@ export default {
       },
       animation:{
         skillProgressBar:"skillProgressBar 2s ease-in-out forwards"
+      },
+      height: {
+        "10per": "9%",
+        "90per": "91%",
       }
     },
   },
